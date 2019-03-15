@@ -16,7 +16,7 @@ Pets shall have a weight.  Use the following data for the existing test objects:
 - Tweety: 0.05
 
 ## Requirement #2
-Person shall have a desired weight.  Desired weights are defined as:
+Person shall have a prefered weight.  Weight classes are defined as:
 
 - Extra Small: 0 < x <= 1.0
 - Small: 1.0 < x <= 5.0
@@ -30,4 +30,15 @@ Use the following data for the existing test objects:
 - Kaladin: Extra Small
 
 ## Requirement #3
-Decide on how a good pet is defined???
+All preferences shall be overridable.
+
+## Requirement #4
+A person shall be able to have unlimited number of overrides
+
+## Requirement #5
+Pet decisions shall be made using the following hierarchy (1 overrides 2, 2 overrides 3, etc.):
+
+1. Type
+2. Classification
+3. Weight
+4. Default Type/Classification/Weight on person object
