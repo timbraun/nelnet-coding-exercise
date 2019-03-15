@@ -18,14 +18,14 @@ namespace NelnetProgrammingExercise
                 new PersonModel()
                 {
                     Name = "Dalinar",
-                    PreferredClassifications = new PetClassification[] { PetClassification.Mammal },
-                    PreferredTypes = new PetType[] { PetType.Snake }
+                    PreferredClassification = PetClassification.Mammal,
+                    PreferredType = PetType.Snake
                 },
                 new PersonModel()
                 {
                     Name = "Kaladin",
-                    PreferredClassifications = new PetClassification[] { PetClassification.Reptile, PetClassification.Bird },
-                    PreferredTypes = new PetType[] { PetType.Goldfish }
+                    PreferredClassification = PetClassification.Bird,
+                    PreferredType = PetType.Goldfish
                 }
             };
 
@@ -92,7 +92,7 @@ namespace NelnetProgrammingExercise
 
         private static string IsGood(PersonModel person, PetModel pet)
         {
-            return person.PreferredClassifications.Any(c => c == pet.Classification) || person.PreferredTypes.Any(t => t == pet.Type)
+            return person.PreferredClassification == pet.Classification || person.PreferredType == pet.Type
                 ? "good"
                 : "bad";
         }

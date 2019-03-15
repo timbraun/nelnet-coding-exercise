@@ -7,7 +7,7 @@ namespace NelnetProgrammingExercise.Models
     public class PersonModel
     {
         public string Name { get; set; }
-        public IEnumerable<PetClassification> PreferredClassifications { get; set; }
-        public IEnumerable<PetType> PreferredTypes { get; set; }
+        public PetClassification PreferredClassification { get; set; }
+        public PetType PreferredType { get; set; }
     }
 }
