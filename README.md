@@ -42,3 +42,25 @@ Pet decisions shall be made using the following hierarchy (1 overrides 2, 2 over
 2. Classification
 3. Weight
 4. Default Type/Classification/Weight on person object
+
+For example, given Person A below:
+
+```
+{
+  Name: 'Person A',
+  PreferredClassification: PetClassification.Mammal,
+  PreferredType: PetType.Cat
+}
+```
+
+And Pet object:
+
+```
+{
+  Name = "Odie",
+  Classification = PetClassification.Mammal,
+  Type = PetType.Dog
+}
+```
+
+This would return as a good pet match because the user's preferred classification matches the pet's classification.  However, if Person A was opposed to dogs, we would want to be able to add an override for PetType.Dog so that this would no longer be a good match. 
