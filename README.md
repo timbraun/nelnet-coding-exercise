@@ -30,7 +30,7 @@ Use the following data for the existing test objects:
 - Kaladin: Extra Small
 
 ## Requirement #3
-All preferences shall be overridable.
+All preferences (classification, type, weight) shall be overridable.
 
 ## Requirement #4
 A person shall be able to have unlimited number of overrides
