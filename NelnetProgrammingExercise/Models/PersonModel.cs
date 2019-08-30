@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using NelnetProgrammingExercise.Models;
 
 namespace NelnetProgrammingExercise.Models
 {
@@ -9,5 +8,8 @@ namespace NelnetProgrammingExercise.Models
         public string Name { get; set; }
         public PetClassification PreferredClassification { get; set; }
         public PetType PreferredType { get; set; }
-    }
+        public PetSize PreferredSize { get; set; } // Added in order to track size requirements of owner
+
+        public List<iThinkThisIsGross> Restrictions; // Added to track restrictions per-person
+    } 
 }

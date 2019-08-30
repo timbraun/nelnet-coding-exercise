@@ -9,5 +9,6 @@ namespace NelnetProgrammingExercise.Models
         public string Name { get; set; }
         public PetClassification Classification { get; set; }
         public PetType Type { get; set; }
+        public double Weight { get; set; } // REQUIREMENT 1: PETS HAVE WEIGHTS 
     }
 }
