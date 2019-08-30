@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NelnetProgrammingExercise.Models
+﻿namespace NelnetProgrammingExercise.Models
 {
     /**
      * In general, if a function is going to be used multiple times (as it is in a couple classes here), I 

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using NelnetProgrammingExercise.Models;
 
 namespace NelnetProgrammingExercise.Models
 {
